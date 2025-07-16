@@ -35,9 +35,10 @@ public class Q3_NightMarketRanking {
     }
 }
 /*
- * Time Complexity: O(n^2)
+ * Time Complexity: O(n²)
  * 說明：
- * 這題用選擇排序，外層迴圈跑 n 次，內層每次要找到剩餘元素最大值又要跑最多 n 次，
- * 所以大概是 n*(n-1)/2 次比較，
- * 因此時間複雜度是平方時間 O(n²)。
+ * - 外層 for 需執行 (n - 1) 次。
+ * - 每次內層找最大值需比較 (n - i - 1) 次。
+ * - 總比較次數約為 n(n-1)/2。
+ * 屬於 O(n²) 的選擇排序。
  */
