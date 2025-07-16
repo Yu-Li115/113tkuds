@@ -27,8 +27,11 @@ public class Q5_CPBLPrefixWins {
         }
     }
 }
-
 /*
  * Time Complexity: O(n)
- * 說明：建立 prefix sum 陣列需走訪 n 次，計算各位置勝場累積數。
+ * 說明：
+ * 建立 prefix sum 陣列時需要走訪一次 n 筆資料，
+ * 累積勝場計算只要簡單加法，都是常數時間，
+ * 輸出前 k 筆也是常數時間（k ≤ n），
+ * 因此整體時間複雜度是線性 O(n)。
  */
