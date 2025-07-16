@@ -39,8 +39,11 @@ public class Q4_TieredElectricBill {
         return (int) Math.round(amount);
     }
 }
-
 /*
  * Time Complexity: O(n)
- * 說明：每個用電量在常數時間內計算出電費，總共處理 n 筆資料，為線性時間。
+ * 說明：
+ * 我們有 n 筆用電量要計算，每筆計算費用時，因為段數固定（6 段），
+ * 所以每次計算都是常數時間 O(1)，
+ * 總共走訪 n 筆資料，
+ * 整體就是線性時間 O(n)。
  */
